@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --gray-800: #1E293B;
+    --gray-600: #475569;
+
+}
+
+main{
+    padding-inline: 1.5rem;
+}
+
 header{
     background-image: url(./material/bg-mobile.png);
     background-size: cover;
@@ -13,4 +23,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3.7rem;
+}
+
+.desc h1{
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+    font-size: 1.5625rem;
 }
