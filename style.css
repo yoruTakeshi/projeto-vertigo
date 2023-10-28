@@ -123,9 +123,10 @@ header {
     cursor: pointer;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   body {
     display: flex;
+    height:100vh;
   }
   header {
     background: none;
@@ -154,6 +155,13 @@ header {
   .bg-desktop {
     display: block;
   }
+
+  .bg-desktop img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
   .desc h1 {
     font-size: 2.25rem;
   }
@@ -161,5 +169,4 @@ header {
   .desc p {
     font-size: 1rem;
   }
-
 }
