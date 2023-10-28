@@ -1,130 +1,144 @@
-*{
-    /* reset do CSS */
-    font-family: 'Titillium Web', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  /* reset do CSS */
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --gray-800: #1E293B;
-    --gray-600: #475569;
-    --gray-400: #94A3B8;
-    --gray-200: #e2e8f0;
-    --white: #ffffff;
-    --purple: #7c3aed;
+:root {
+  --gray-800: #1e293b;
+  --gray-600: #475569;
+  --gray-400: #94a3b8;
+  --gray-200: #e2e8f0;
+  --white: #ffffff;
+  --purple: #7c3aed;
 }
 
-main{
-    padding-inline: 1.5rem;
+main {
+  padding-inline: 1.5rem;
 }
 
-header{
-    background-image: url(./material/bg-mobile.png);
-    background-size: cover;
-    height: 8.375rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.7rem;
+header {
+  background-image: url(./material/bg-mobile.png);
+  background-size: cover;
+  height: 8.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.7rem;
 }
 
-.desc{
-    margin-bottom: 2.5rem;
+.desc {
+  margin-bottom: 2.5rem;
 }
 
-.desc h1{
-    color: var(--gray-800);
-    margin-bottom: 1rem;
-    font-size: 1.5625rem;
+.desc h1 {
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+  font-size: 1.5625rem;
 }
 
-.desc p{
-    font-size: 0.8125rem;
-    color: var(--gray-600);
+.desc p {
+  font-size: 0.8125rem;
+  color: var(--gray-600);
 }
 
-.input-box{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.input-box div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.input-box div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.login label{
-    font-size: 0.875rem;
-    color: var(--gray-800);
-    font-weight: 600;
+.login label {
+  font-size: 0.875rem;
+  color: var(--gray-800);
+  font-weight: 600;
 }
 
-.login input{
-    padding: 1rem 0.75rem;
-    border: 1px solid var(--gray-200);
-    border-radius: 0.25rem;
-    color: var(--gray-800);
+.login input {
+  padding: 1rem 0.75rem;
+  border: 1px solid var(--gray-200);
+  border-radius: 0.25rem;
+  color: var(--gray-800);
 }
 
-.login input::placeholder{
-    color: var(--gray-400);
+.login input::placeholder {
+  color: var(--gray-400);
 }
 
 .login input:hover,
-.login input:focus{
-    outline: 1px solid var(--purple);
+.login input:focus {
+  outline: 1px solid var(--purple);
 }
 
-.login a{
-    color: var(--purple);
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 600;
+.login a {
+  color: var(--purple);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
-.login a:hover{
-    text-decoration: underline;
+.login a:hover {
+  text-decoration: underline;
 }
 
-.login button{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    padding-block: 1rem;
+.login button {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-block: 1rem;
+  width: 100%;
+  background: var(--purple);
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.login > p {
+  color: var(--gray-600);
+}
+
+.login > p a {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.bg-desktop {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  body {
+    display: flex;
+  }
+  header {
+    background: none;
+    justify-content: flex-start;
+    padding-inline: 7rem;
+  }
+
+  header img {
+    width: 10rem;
+  }
+
+  main {
+    padding-inline: 7rem;
+  }
+
+  .conteudo {
     width: 100%;
-    background: var(--purple);
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--white);
-}
+  }
 
-.login > p{
-    color: var(--gray-600);
-}
-
-.login > p a{
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-@media(min-width: 960px){
-    header{
-        background: none;
-        justify-content: flex-start;
-        padding-inline: 7rem;
-    }
-
-    header img{
-        width: 10rem;
-    }
-
-    main{
-        padding-inline: 7rem;
-    }
+  .bg-desktop {
+    display: block;
+  }
 }
